@@ -1,0 +1,102 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>HTML Table Tutorial W8</title>
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="song/BIBI.mp3" autostart="true" hidden="true" volume="100"type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById('background-audio');
+            const playAudio = () => {
+                audio.play().catch(error => {
+                    console.log('Audio playback was prevented:', error);
+                });
+            };
+    
+            // Play audio after user interacts with the page
+            document.body.addEventListener('click', playAudio, { once: true });
+        });
+    </script>
+    <button id="play-audio-button">Play Audio</button>
+    
+    <script src="js/script.js"></script>
+    
+<h3 align="center">My Education Journey</h3>
+<table border="2" width="70%" align="center" cellpadding="5" cellspacing="5">
+<th colspan="3"><center><img src="image/cik.jpg" width="600" height="300"></center></th>
+<th colspan="3"><center><img src="image/PAA.jpg" width="500" height="300"></center></th>
+<tr align="center" bgcolor="pink">
+<th rowspan="5"> PRIMARY SCHOOL </th>
+<th> NAME </th>
+<th> YEAR </th>
+<th>STORY</th>
+</tr>
+
+<tr align="center" valign="middle">
+<td>SEKOLAH KEBANGSAAN HAMZAH </td>
+<td>2011-2016 </td>
+<td>In primary school, I was a curious and enthusiastic learner, eager to absorb all the knowledge I could. 
+    I enjoyed participating in various activities, from arts and crafts to sports and reading. 
+    Making friends was easy, and I loved collaborating on group projects and playing games during recess.
+     My teachers often praised my creativity and willingness to help others, 
+     which instilled in me a strong sense of community and teamwork. 
+     These formative years were filled with excitement and discovery,
+      laying a solid foundation for my educational journey.</td>
+</tr>
+
+<br>
+<table border="2" width="70%" align="center" cellpadding="5" cellspacing="5">
+    <th colspan="3"><center><img src="image/sch1.jpg" width="600" height="300"></center></th>
+    <th colspan="3"><center><img src="image/PAPA.jpg" width="500" height="300"></center></th>
+    <tr align="center" bgcolor="pink">
+<tr align="center" bgcolor="pink">
+<th rowspan="5">SECONDARY SCHOOL</th>
+<th>NAME</th>
+<th>YEAR</th>
+<th>STORY</th>
+</tr>
+
+<tr align="center" valign="middle">
+<td>SEKOLAH MENENGAH KEBANGSAAN HAMZAH 2</td>
+<td>2017-2021</td>
+<td>Secondary school marked a period of significant growth and self-discovery.
+     As the academic challenges increased, I developed a more disciplined approach to my studies,
+      balancing coursework with extracurricular activities. I joined several clubs, 
+      such as the debate team and the science club, which helped me hone my 
+      critical thinking and public speaking skills. Friendships became deeper,
+       and I learned the value of perseverance and resilience through the ups and downs of teenage life. 
+       These years were crucial in shaping my identity and aspirations, preparing me for the next stage of my education.</td>
+</tr>
+
+<br>
+<table border="2" width="70%" align="center" cellpadding="5" cellspacing="5">
+    <th colspan="3"><center><img src="image/univ1.jpg" width="600" height="300"></center></th>
+    <th colspan="3"><center><img src="image/PIPI.jpg" width="500" height="300"></center></th>
+    <tr align="center" bgcolor="pink">
+<tr align="center" bgcolor="pink">
+<th rowspan="5">UNIVERSITY</th>
+<th>NAME</th>
+<th>YEAR</th>
+<th>STORY</th>
+</tr>
+
+<tr align="center" valign="middle">
+<td>UNIVERSITI TEKNOLOGI MARA</td>
+<td>2022-NOW </td>
+<td>University life has been an enriching and transformative experience. 
+    I chose a field of study that I am passionate about, delving into complex subjects and
+     engaging in research projects that fuel my intellectual curiosity. 
+     The diverse and dynamic campus environment has exposed me to different cultures and perspectives, 
+     broadening my horizons and enhancing my social skills.
+      Balancing academic responsibilities with internships has taught me time management 
+      and professional conduct. University has not only equipped me with specialized
+       knowledge and skills but also fostered a sense of independence and confidence as I prepare to embark on my future career.</td>
+</tr>
+
+</table>
+</body>
+</html>

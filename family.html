@@ -1,0 +1,114 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>HTML Table Tutorial W8</title>
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="song/Travisscott-telekinesis.mp3" autostart="true" hidden="true" volume="100"type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById('background-audio');
+            const playAudio = () => {
+                audio.play().catch(error => {
+                    console.log('Audio playback was prevented:', error);
+                });
+            };
+    
+            // Play audio after user interacts with the page
+            document.body.addEventListener('click', playAudio, { once: true });
+        });
+    </script>
+    <button id="play-audio-button">Play Audio</button>
+    
+    <script src="js/script.js"></script>
+<h3 align="center"> My Family </h3>
+<table border="2" width="70%" align="center" cellpadding="5" cellspacing="5">
+<th colspan="3"><center><img src="image/FAM2.jpg" width="700" height="500"></center></th>
+<tr align="center" bgcolor="pink">
+<th rowspan="13"> MY FAMILY </th>
+<th> NAME </th>
+<th> RELATIONSHIP </th>
+</tr>
+
+<tr align="center" valign="middle">
+<td>Mohd Azmi Bin Harun</td>
+<td>My Father</td>
+</tr>
+
+<tr align="center">
+<td>Wan Awateff Binti Wan Lah @ Abdullah</td>
+<td>My Mother</td>
+</tr>
+
+<tr align="center">
+<td>Fathie Bin Mohd Azmi</td>
+<td>My Oldest Brother</td>
+</tr>
+<tr align="center">
+<td>Hanin Binti Mohd Azmi</td>
+<td>My Oldest Sister</td>
+</tr>
+
+<tr align="center">
+<td>Najwa Binti Mohd Azmi</td>
+<td>My Second Oldest Sister</td>
+</tr>
+
+<tr align="center">
+<td>Nabiel Binti Mohd Azmi</td>
+<td>My Second Oldest Brother</td>
+</tr>
+
+<tr align="center">
+<td>Saeiff Binti Mohd Azmi</td>
+<td>My Third Oldest Brother</td>
+</tr>
+
+<tr align="center">
+<td>Wafaa Binti Mohd Azmi</td>
+<td>Second Youngest Sister</td>
+</tr>
+
+<tr align="center">
+<td>Sofea Binti Mohd Azmi</td>
+<td>My Youngest Sister</td>
+</tr>
+
+<tr align="center">
+    <td>Ahmad Ehab</td>
+    <td>My Brother In Law</td>
+    </tr>
+
+    <tr align="center">
+        <td>Nur Hidayah Binti Mohamad</td>
+        <td>My Sister In Law</td>
+        </tr>
+
+        <tr align="center">
+            <td>Aizat Hamzah</td>
+            <td>My Future Brother In Law</td>
+            </tr>
+
+<th colspan="3"><center><img src="image/ANOK1.jpg" width="700" height="500"></center></th>
+<tr align="center" bgcolor="pink">
+<th rowspan="10"> MY FAMILY </th>
+<th> NAME </th>
+<th> RELATIONSHIP </th>
+</tr>
+
+<tr align="center" valign="middle">
+<td>Fayreel Hafiy Bin Fathie</td>
+<td>My First Nephew</td>
+</tr>
+<tr align="center" valign="middle">
+    <td>Fareez Hakimiy Bin Fathie</td>
+    <td>My Second Nephew</td>
+    </tr>
+
+
+</table>
+</body>
+</html>

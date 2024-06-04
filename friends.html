@@ -1,0 +1,79 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>Website Friends</title>
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="song/Twice-talkthattalk.m4a" autostart="true" hidden="true" volume="100"type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById('background-audio');
+            const playAudio = () => {
+                audio.play().catch(error => {
+                    console.log('Audio playback was prevented:', error);
+                });
+            };
+    
+            // Play audio after user interacts with the page
+            document.body.addEventListener('click', playAudio, { once: true });
+        });
+    </script>
+    <button id="play-audio-button">Play Audio</button>
+    
+    <script src="js/script.js"></script>
+
+<h3 align="center">MY</h3>
+<table border="2" width="70%" align="center" cellpadding="5" cellspacing="5">
+<th colspan="3"><center><img src="image/pungut.jpg" width="900" height="500" ></center></th>
+<tr align="center" bgcolor="pink">
+<th rowspan="5"> MY FRIEND </th>
+<th> NAME </th>
+<th> RELATIONSHIP </th>
+</tr>
+
+<tr align="center" valign="middle">
+<td>Anis Sufiya Hisham</td>
+<td>Bestie</td>
+</tr>
+
+<tr align="center">
+<td>Nur Aini Farhana Binti Mohd Anuar</td>
+<td>Bestie</td>
+</tr>
+
+<tr align="center">
+<td>Nurul Ain Damia Binti Mohd Khamal</td>
+<td>Bestie</td>
+</tr>
+
+<h3 align="center"> 𝐒𝐭✰𝐫𝐠𝐢𝐫𝐥</h3>
+<table border="2" width="70%" align="center" cellpadding="5" cellspacing="5">
+<th colspan="3"><center><img src="image/empat.jpg" width="900" height="500"></center></th>
+<tr align="center" bgcolor="pink">
+<tr align="center" bgcolor="pink">
+<th rowspan="5">MY FRIENDS</th>
+<th>NAME</th>
+<th>RELATIONSHIP</th>
+</tr>
+
+<tr align="center" valign="middle">
+<td>Nur Farahanim Binti Johari</td>
+<td>BFF</td>
+</tr>
+
+<tr align="center">
+<td>Nur Emilia Natasya Binti Asri</td>
+<td>BFF</td>
+</tr>
+
+<tr align="center">
+<td>Nur Shahirah Syamimiey Binti Saufi</td>
+<td>BFF</td>
+</tr>
+
+</table>
+</body>
+</html>

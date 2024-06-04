@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: pink;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+        video {
+            border: 5px solid black;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .card h4 {
+            margin: 10px 0 5px;
+        }
+        .card p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- MP4, WebM, and Ogg -->
+    <video controls autoplay muted loop width="800" height="450">
+        <source src="vid/ngoya.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio id="background-audio" loop>
+        <source src="audio/supernatural.mp3" autostart="true" hidden="true" volume="100"type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <div class="content">
+        <div class="card">
+            <img src="image/ME9.jpg" alt="Me 2">
+            <h4>HYE!!!</h4>
+            <p>Hi there! I'm Wafaa binti Mohd Azmi,
+                 a 20-year-old student currently studying at UiTM Kedah. 
+                My world revolves around exploring the 
+                artistry of makeup, losing myself in the melodies of songs,
+                 and finding peace on the tranquil shores, 
+                 listening to the soothing symphony of waves</p>
+        </div>
+        <div class="card">
+            <img src="image/me5.jpg" alt="Me 1">
+            <h4>ABOUT ME</h4>
+            <p>I'm Wafaa binti Mohd Azmi, a driven student embarking on a journey
+                 of knowledge at UiTM Kedah, where I pursue my passion for
+                  Library and Information Management</p>
+        </div>
+        <div class="card">
+            <img src="image/ME8.jpg" alt="Me 3">
+            <h4>MY STORY</h4>
+            <p>Originally hailing from the vibrant city of
+                 Batu Pahat, Johor, I now call Machang, Kelantan, 
+                 my home, where I embrace new experiences 
+                 and opportunities while supporting my parents' endeavors."
+
+
+
+
+
+
+            </p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById('background-audio');
+            const playAudio = () => {
+                audio.play().catch(error => {
+                    console.log('Audio playback was prevented:', error);
+                });
+            };
+
+            // Play audio after user interacts with the page
+            document.body.addEventListener('click', playAudio, { once: true });
+        });
+    </script>
+   <button id="play-audio-button">Play Audio</button>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
