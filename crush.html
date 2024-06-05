@@ -1,0 +1,87 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>CELEB</title>
+<style>
+    body {
+        background-color: rgb(189, 174, 225);
+    }
+    table {
+        margin: 20px auto;
+    }
+</style>
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="audio/bts-blackswan.mp3" autostart="true" hidden="true" volume="100"type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById('background-audio');
+            const playAudio = () => {
+                audio.play().catch(error => {
+                    console.log('Audio playback was prevented:', error);
+                });
+            };
+    
+            // Play audio after user interacts with the page
+            document.body.addEventListener('click', playAudio, { once: true });
+        });
+    </script>
+    <button id="play-audio-button">Play Audio</button>
+    
+    <script src="js/script.js"></script>
+
+<h3 align="center">CELEBRITY CRUSH</h3>
+<table border="2" width="70%" align="center" cellpadding="5" cellspacing="5">
+<th colspan="3"><center><img src="image/tae1.jpg" width=800" height="500"></center></th>
+<tr align="center" bgcolor="silver">
+<th rowspan="9"> KIM TAEHYUNG </th>
+<th> ABOUT HIM </th>
+<th> ANSWER </th>
+</tr>
+<tr align="center" valign="middle"bgcolor="white">
+<td>Full Name</td>
+<td>Kim Taehyung</td>
+</tr>
+
+<tr align="center"bgcolor="white">
+<td>Stage Name </td>
+<td>V</td>
+</tr>
+
+<tr align="center"bgcolor="white">
+<td>Date of Birth</td>
+<td>30 December 1995</td>
+</tr>
+<tr align="center"bgcolor="white">
+<td>Place of birth</td>
+<td>Daegu,South Korea</td>
+</tr>
+
+<tr align="center" valign="middle"bgcolor="white">
+<td>Occupation</td>
+<td>Singer,Writer,Actor</td>
+</tr>
+
+<tr align="center"bgcolor="white">
+<td>Group</td>
+<td>BTS</td>
+</tr>
+
+<tr align="center"bgcolor="white">
+<td>Fun Facts</td>
+<td>- Known for his deep voice and charismatic stage presence
+    - Enjoys photography and often shares his work on social media
+    - Has a pet dog named Yeontan</td>
+</tr>
+
+<tr align="center"bgcolor="white">
+<td>Debut</td>
+<td>13 June 2013</td>
+</tr>
+</table>
+
+</body>
+</html>
